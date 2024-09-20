@@ -16,6 +16,6 @@ E irá retornar a velocidade média da corrida da pessoa
 criar um app com os seguintes comandos no terminal:
 - npm install -g expo-cli
 - cd Downloads
-- expo init Calculador_velocidade
+- npx expo init Calculador_velocidade
 
 mover os códigos baixados para dentro dessa pasta
