@@ -2,6 +2,14 @@
 
 Um simples app para calcular a velocidade
 
+## Como rodar
+criar um app com os seguintes comandos no terminal:
+- npm install -g expo-cli
+- cd Downloads
+- npx expo init Calculador_velocidade
+
+mover os códigos baixados para dentro dessa pasta
+
 ## Funções
 
 Ele irá pegar duas entradas do usuário: 
@@ -11,11 +19,3 @@ Ele irá pegar duas entradas do usuário:
 E irá retornar a velocidade média da corrida da pessoa
 
 - dar opcção de calcular mcu também
-
-## Como rodar
-criar um app com os seguintes comandos no terminal:
-- npm install -g expo-cli
-- cd Downloads
-- npx expo init Calculador_velocidade
-
-mover os códigos baixados para dentro dessa pasta
