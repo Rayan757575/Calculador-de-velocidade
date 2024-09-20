@@ -9,6 +9,7 @@ criar um app com os seguintes comandos no terminal:
 - npx expo init Calculador_velocidade
 
 mover os códigos baixados para dentro dessa pasta
+tutorial completo em https://pt.linkedin.com/pulse/construindo-seu-primeiro-aplicativo-com-react-native-plaster-moreira
 
 ## Funções
 
