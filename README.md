@@ -7,6 +7,10 @@ criar um app com os seguintes comandos no terminal:
 - npm install -g expo-cli
 - cd Downloads
 - npx expo init Calculador_velocidade
+- outras dependencias:
+
+npm install @babel/core @expo/metro-runtime @react-navigation/bottom-tabs @react-navigation/native-stack @react-navigation/native babel-plugin-module-resolver react-dom react-native-screens react-native-web styled-components 
+
 
 mover os códigos baixados para dentro dessa pasta
 
