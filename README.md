@@ -10,20 +10,7 @@ criar um app com os seguintes comandos no terminal:
 - outras dependencias:
 
 npm install
-├── @babel/core
-├── @expo/metro-runtime
-├── @react-navigation/bottom-tabs
-├── @react-navigation/native-stack
-├── @react-navigation/native
-├── babel-plugin-module-resolver
-├── expo-status-bar
-├── expo@51.0.32
-├── react-dom@18.2.0
-├── react-native-screens@3.34.0
-├── react-native-web@0.19.12
-├── react-native@0.74.5
-├── react@18.2.0
-└── styled-components
+npm install  @babel/core @expo/metro-runtime @react-navigation/bottom-tabs @react-navigation/native-stack @react-navigation/native babel-plugin-module-resolver expo-status-bar react-dom react-native-screens react-native-web  styled-components
 
 mover os códigos baixados para dentro dessa pasta
 
