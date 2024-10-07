@@ -1,16 +1,13 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, TextInput, View } from 'react-native';
-import { Container, Title, Button } from '~/components';
-import { theme } from '~/styles';
+import { StyleSheet, TextInput, View, Text, TouchableOpacity } from 'react-native';
 
 export const Home = () => {
 
     const [distance, onChangeDistance] = React.useState('');
-
     const [time, onChangeTime] = React.useState('');
-    let text
-
+    
+    const [result, setResult] = React.useState('');
     const ConversorTempo = () => {
         return time / 60
     }
@@ -21,48 +18,66 @@ export const Home = () => {
     }
     const Calcular = () => {
         Vm = VelocidadeMedia()
-        text = "Sua velocidade média foi de " + Vm + " Kms por hora"
-
+        setResult("Sua velocidade média foi de " + Vm + " Kms por hora")
     }
     return (
-        <Container p={48} align={'center'}>
-            <Title>Calculador</Title>
-            <View style={styles.container}>
-                <Title size={20} mBottom={10}>Tempo</Title>
-                <TextInput placeholder='Minutos' style={styles.input} multiline onChangeText={onChangeTime}></TextInput>
-                <Title size={20} mBottom={10}>Distância</Title>
-                <TextInput placeholder='KMs' style={styles.input} multiline onChangeText={onChangeDistance}></TextInput>
-                <Button mBottom={150} bg={'primary'} color={'white'} onPress={() => Calcular()}>Calcular</Button>
-                <Title size ={18}>{text}</Title>
+        <View style={styles.container}>
+            <View style={styles.titleBox}>
+                <Text style={styles.title}>Calculador</Text>
             </View>
-            <StatusBar style="auto" />
-        </Container>
+            <View style={styles.container}>
+                <Text style={styles.subtitle}>Tempo</Text>
+                <TextInput placeholder='Minutos' style={styles.input} multiline onChangeText={onChangeTime}></TextInput>
+                <Text  style={styles.subtitle}>Distância</Text>
+                <TextInput placeholder='KMs' style={styles.input} multiline onChangeText={onChangeDistance}></TextInput>
+                <TouchableOpacity style={styles.btn} onPress={()=> Calcular()}><Text style={styles.white}>Calcular</Text></TouchableOpacity>
+                <Text style={styles.resultado}>{result}</Text>
+            </View>
+        </View>
+
     );
 }
 
 const styles = StyleSheet.create({
     container: {
-        marginTop: 100,
+        flex: 1,
         backgroundColor: '#fff',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'flex-start', 
+        height: '100%'
+    },
+    titleBox: {
+        backgroundColor: '#fff',
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: 100
+    },
+    title: {
+        fontSize:36
+    },
+    subtitle: {
+        fontSize:20,
+        marginBottom: 20
+    },
+    resultado: {
+        marginTop: 30
     },
     input: {
         borderWidth: 1,
         borderRadius: 10,
         width: 200,
-        height: 50,
+        height: 25,
         marginBottom: 30,
 
     },
     btn: {
         backgroundColor: 'purple',
-        color: 'white',
         width: 150,
         height: 35,
         alignItems: 'center',
         justifyContent: 'center',
-        borderRadius: 100
+        borderRadius: 100,
+        marginTop: 50
     },
     white: {
         color: 'white'
