@@ -9,7 +9,6 @@ seguir as seguintes etapas:
 - criar um terminal e nele inserir os seguintes comandos:
 
   npm install
-
   npx expo start
 - neste momento o apllicativo estará rodando na sua máquina, porém para visualizá-lo voc~e tem duas opções:
   
