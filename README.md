@@ -3,31 +3,16 @@
 Um simples app para calcular a velocidade
 
 ## Como rodar
-criar um app com os seguintes comandos no terminal:
-- npm install -g expo-cli
-- cd Downloads
-- npx expo init Calculador_velocidade
-- outras dependencias:
-
-npm install
-├── @babel/core
-├── @expo/metro-runtime
-├── @react-navigation/bottom-tabs
-├── @react-navigation/native-stack
-├── @react-navigation/native
-├── babel-plugin-module-resolver
-├── expo-status-bar
-├── expo@51.0.32
-├── react-dom@18.2.0
-├── react-native-screens@3.34.0
-├── react-native-web@0.19.12
-├── react-native@0.74.5
-├── react@18.2.0
-└── styled-components
-
-mover os códigos baixados para dentro dessa pasta
-
-tutorial completo em https://pt.linkedin.com/pulse/construindo-seu-primeiro-aplicativo-com-react-native-plaster-moreira
+seguir as seguintes etapas:
+- baixar o código clicando em 'Download Zip'
+- abrir a pasta no Vscode
+- criar um terminal e nele inserir os seguintes comandos:
+  npm install
+  npx expo start
+- neste momento o apllicativo estará rodando na sua máquina, porém para visualizá-lo voc~e tem duas opções:
+  1 - baixar o expo no seu celular e escanear o Qr Code que aparecerá no terminal, nesse momento seu celular rodará o aplicativo;
+  ou
+  2 - no vscode, instalar a extensão chamada "MobileView" da cirlorm, clicar no icone de celular que aparecerá no menu lateral do vscode, escolher a opção "Use iphone X" e inserir a porta 'localhost:8081', nesse momento um emulador aparecerá na sua tela e rodará o aplicativo.
 
 ## Funções
 
