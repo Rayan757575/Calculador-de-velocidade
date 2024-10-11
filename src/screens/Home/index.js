@@ -18,7 +18,11 @@ export const Home = () => {
     }
     const Calcular = () => {
         Vm = VelocidadeMedia()
-        setResult("Sua velocidade média foi de " + Vm + " Kms por hora")
+        if(time == '' || distance == ''){
+            setResult("Preencha os campos")
+        }else{
+            setResult("Sua velocidade média foi de " + Vm + " Kms por hora")
+        }
     }
     return (
         <View style={styles.container}>
@@ -50,7 +54,8 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',
-        height: 100
+        height: 100,
+        marginBottom: 20
     },
     title: {
         fontSize:36
@@ -66,7 +71,7 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderRadius: 10,
         width: 200,
-        height: 25,
+        height: 27,
         marginBottom: 30,
 
     },
