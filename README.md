@@ -10,9 +10,10 @@ seguir as seguintes etapas:
   npm install
   npx expo start
 - neste momento o apllicativo estará rodando na sua máquina, porém para visualizá-lo voc~e tem duas opções:
-  1 - baixar o expo no seu celular e escanear o Qr Code que aparecerá no terminal, nesse momento seu celular rodará o aplicativo;
+- 
+  - 1 - baixar o expo no seu celular e escanear o Qr Code que aparecerá no terminal, nesse momento seu celular rodará o aplicativo;
   ou
-  2 - no vscode, instalar a extensão chamada "MobileView" da cirlorm, clicar no icone de celular que aparecerá no menu lateral do vscode, escolher a opção "Use iphone X" e inserir a porta 'localhost:8081', nesse momento um emulador aparecerá na sua tela e rodará o aplicativo.
+  - 2 - no vscode, instalar a extensão chamada "MobileView" da cirlorm, clicar no icone de celular que aparecerá no menu lateral do vscode, escolher a opção "Use iphone X" e inserir a porta 'localhost:8081', nesse momento um emulador aparecerá na sua tela e rodará o aplicativo.
 
 ## Funções
 
