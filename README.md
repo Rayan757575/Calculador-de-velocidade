@@ -13,8 +13,7 @@ seguir as seguintes etapas:
   
  
   - 1 - baixar o expo no seu celular e escanear o Qr Code que aparecerá no terminal, nesse momento seu celular rodará o aplicativo;
-    
-  ou
+
   - 2 - no vscode, instalar a extensão chamada "MobileView" da cirlorm, clicar no icone de celular que aparecerá no menu lateral do vscode, escolher a opção "Use iphone X" e inserir a porta 'localhost:8081', nesse momento um emulador aparecerá na sua tela e rodará o aplicativo.
 
 ## Funções
