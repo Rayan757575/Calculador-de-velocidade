@@ -1,6 +1,6 @@
 # Calculador-de-velocidade
 
-Um simples app para calcular a velocidade
+Um simples app para calcular a velocidade feito para entrega de atividade escolar, utilizada como método de avalição de aprendizado
 
 ## Como rodar
 seguir as seguintes etapas:
